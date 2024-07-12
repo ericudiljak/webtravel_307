@@ -1,0 +1,121 @@
+.trip-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    .trip-image img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .trip-info {
+        max-width: 600px;
+        width: 100%;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .trip-booking {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            .form-group {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+
+                input {
+                    flex: 1;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+
+            .trip-dates, .guest-select {
+                margin-bottom: 10px;
+
+                p {
+                    margin-bottom: 5px;
+                }
+
+                select {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+
+            .trip-total {
+                margin-top: 10px;
+
+                p {
+                    margin-bottom: 5px;
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .comment-section {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 600px;
+
+        .toggle-comments {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .comments-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+            transition: max-height 0.3s ease-in-out;
+        }
+    }
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
